@@ -10,6 +10,7 @@ def main():
 
     help = interface.seek_help(args)
     print(f"""\n{help.content}""")
+    print(f"\nGenerated using {client.model}.")
 
 
 if __name__ == "__main__":

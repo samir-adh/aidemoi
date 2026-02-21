@@ -1,3 +1,4 @@
+import re
 import subprocess
 
 from .client import Client

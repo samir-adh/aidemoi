@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from pathlib import Path
 from typing import Literal
 import anthropic
 from anthropic.types.text_block import TextBlock
@@ -11,8 +12,8 @@ class Client(ABC):
         pass
 
 
+load_dotenv(Path.home() / ".config" / "affogato" / ".env")
 load_dotenv()
-
 
 class ClaudeClient(Client):
     def __init__(
