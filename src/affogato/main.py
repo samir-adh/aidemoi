@@ -9,7 +9,7 @@ def main():
     args = sys.argv[1:]
 
     help = interface.seek_help(args)
-    print(f'''\n{help.content}''')
+    print(f"""\n{help.content}""")
 
 
 if __name__ == "__main__":
